@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+data/*.db
+data/*.sqlite*
+reports/**/*.html
+reports/**/*.md
+reports/**/*.json
+logs/*.log
+!data/.gitkeep
+!reports/.gitkeep
+!logs/.gitkeep

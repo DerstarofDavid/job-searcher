@@ -1,0 +1,20 @@
+DAVID'S JOB FINDER — WINDOWS QUICK START
+
+1. Extract the ZIP file to a permanent folder.
+2. Install Python 3.11 or newer if needed:
+   https://www.python.org/downloads/windows/
+   Select "Add Python to PATH" during installation.
+3. Double-click setup_windows.bat.
+4. Double-click run_demo.bat to test everything offline.
+5. Double-click run_now.bat for the full live search.
+6. Open reports\latest.html whenever you want to see the newest report.
+
+To run automatically every weekday at 09:00, open PowerShell in this folder:
+
+  powershell -ExecutionPolicy Bypass -File .\schedule_weekdays.ps1 -At "09:00"
+
+When you apply somewhere, update the permanent exclusion list:
+
+  .\.venv\Scripts\python.exe -m jobfinder company add "Company AG" --status applied
+
+For full instructions and limitations, open README.md.
